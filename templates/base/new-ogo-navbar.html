@@ -1,0 +1,77 @@
+<header class="header is-sticky-inverse is-sticky-bg-o-0 position-absolute" data-spy="scroll" data-scroll="sticky"
+  data-sticky-hide="true" data-switch-class="shadow-none|shadow">
+  <nav class="navbar navbar-light navbar-default">
+    <div class="container-xl justify-content-start">
+      <a class="navbar-brand d-flex position-relative mb-1" href="/"><img src="/static/img/logo/logo-nav.png"
+          class="navbar-brand-img-dark" alt="SellPropertyNowTriadNC.com" /><img src="/static/img/logo/logo-nav.png"
+          class="navbar-brand-img-light" alt="SellPropertyNowTriadNC.com" /></a>
+
+      <div class="ms-auto ps-3 navbar-end d-flex flex-row justify-content-end">
+        <!-- <button class="btn btn-link p-0 ms-3 shadow-none" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+        <button class="btn btn-link p-0 ms-3 shadow-none" data-bs-toggle="modal" data-bs-target="#userSignInModal"><i class="fas fa-user"></i></button>
+      -->
+        <button class="btn-close btn-close-menu collapsed ms-3" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="btn-close-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <div class="mt-4 d-lg-none"></div>
+
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <!--<li class="nav-item nav-dropdown dropdown dropdown-hover">
+            <a class="nav-link " href="/" id="navbarHome" role="button">Home</a>
+          </li> -->
+
+          <li class="nav-item nav-dropdown dropdown dropdown-hover">
+            <a class="nav-link " href="{% url 'about' %}" id="navbarHome" role="button">About Us</a>
+          </li>
+
+          <li class="nav-item nav-dropdown dropdown dropdown-hover">
+            <a class="nav-link dropdown-toggle" href="{% url 'areas' %}" id="navbarDocs" role="button"
+              data-bs-toggle="dropdown">Areas
+              We Service</a>
+            <ul class="nav-dropdown-menu dropdown-menu dropdown-menu-end shadow" data-bs-popper>
+              <li>
+                <a class="" href="{% url 'areas' %}"> <span class="dropdown-header text-uppercase fw-bold">Our Service
+                    Areas</span> </a>
+              </li>
+
+              <li><a class="dropdown-item" href="{% url 'home_gso' %}">Greensboro, NC</a></li>
+
+              <li><a class="dropdown-item" href="{% url 'home_hp' %}">High Point, NC</a></li>
+
+              <li><a class="dropdown-item" href="{% url 'home_ws' %}">Winston-Salem, NC</a></li>
+
+            </ul>
+          </li>
+
+          <li class="nav-item nav-dropdown dropdown dropdown-hover">
+            <a class="nav-link " href="{% url 'sell' %}" id="navbarHome" role="button">Sell With Us</a>
+          </li>
+
+          <li class="nav-item nav-dropdown dropdown dropdown-hover">
+            <a class="nav-link " href="{% url 'steps' %}" id="navbarHome" role="button">Steps to Sell</a>
+          </li>
+
+          <li class="nav-item nav-dropdown dropdown dropdown-hover">
+            <a class="nav-link " href="{% url 'contact' %}" id="navbarHome" role="button">Contact Us</a>
+          </li>
+
+          <li class="nav-item nav-dropdown dropdown dropdown-hover">
+            <a class="nav-link " href="{% url 'requestoffer' %}" id="navbarHome" role="button" style="
+            background-color: #ffc107;
+        ">Request Offer</a>
+          </li>
+
+        </ul>
+        <!-- /.navbar-nav -->
+      </div>
+      <!-- /.collapse navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <div class="bg header-bg position-absolute trans-base"></div>
+</header>

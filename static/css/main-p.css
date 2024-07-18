@@ -1,0 +1,145 @@
+
+
+/* ===================================================================
+ * # pricing
+ *
+ * ------------------------------------------------------------------- */
+ .s-pricing {
+  padding-top: 19.2rem;
+  padding-bottom: 17.6rem;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## pricing plan blocks
+ * ------------------------------------------------------------------- */
+.plans {
+  margin-top: 6.4rem;
+}
+
+.item-plan__block {
+  background: #FFFFFF;
+  border-radius: 5px;
+  padding: 5.4rem 4rem 4.8rem;
+  margin-bottom: 4rem;
+}
+
+.item-plan__title {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000000;
+  margin: 0 0 1.6rem 0;
+}
+
+.item-plan__price,
+.item-plan__per {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.item-plan__price {
+  font-size: 5.4rem;
+  line-height: 1.185;
+  font-weight: 800;
+  color: #000000;
+}
+
+.item-plan__per {
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.4);
+  margin: 0 4px;
+}
+
+.item-plan__bottom-part {
+  margin-top: 3.2rem;
+}
+
+.item-plan--popular {
+  color: white;
+}
+
+.item-plan--popular ul.disc li::before {
+  background: #FFFFFF;
+}
+
+.item-plan--popular .item-plan__block {
+  background-color: #00a650;
+  border: none;
+}
+
+.item-plan--popular .item-plan__title,
+.item-plan--popular .item-plan__price {
+  color: #FFFFFF;
+}
+
+.item-plan--popular .item-plan__per {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.item-plan--popular .btn {
+  background-color: #FFFFFF;
+  border: 0.2rem solid #FFFFFF;
+  color: #000000;
+}
+
+.item-plan--popular .btn:hover,
+.item-plan--popular .btn:focus {
+  background-color: #006933;
+  border: 0.2rem solid #006933;
+  color: #FFFFFF;
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * pricing
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width:1200px) {
+  .plans {
+    max-width: 800px;
+  }
+
+}
+
+@media only screen and (max-width:1000px) {
+  .s-pricing {
+    padding-top: 16.8rem;
+    padding-bottom: 16.8rem;
+  }
+
+}
+
+@media only screen and (max-width:800px) {
+  .plans {
+    max-width: 500px;
+  }
+
+}
+
+@media only screen and (max-width:600px) {
+  .s-pricing {
+    padding-top: 12rem;
+    padding-bottom: 9.6rem;
+  }
+
+}
+
+@media only screen and (max-width:400px) {
+  .item-plan {
+    font-size: 1.6rem;
+    line-height: 2;
+  }
+
+  .item-plan__price {
+    font-size: 5rem;
+  }
+
+}
+
+@media only screen and (max-width:350px) {
+  .item-plan__block {
+    padding: 5.4rem 3.2rem 4.8rem;
+  }
+
+}
